@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJYU 계산기 - 미리보기</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Malgun Gothic", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .logo { font-size: 3em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.3em; opacity: 0.95; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .category {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .category-title {
+            font-size: 2em;
+            color: #2d3748;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #fff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+        .icon { font-size: 3em; margin-bottom: 15px; }
+        .card h3 { font-size: 1.3em; color: #2d3748; margin-bottom: 8px; }
+        .card p { color: #718096; font-size: 0.95em; }
+        .ad-box {
+            background: #fff;
+            border: 2px dashed #ccc;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #999;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .logo { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-box">[ 애드센스 상단 광고 영역 ]</div>
+
+    <div class="header">
+        <h1 class="logo">🧮 JJYU 계산기</h1>
+        <p class="subtitle">대한민국 모든 계산을 한곳에서!</p>
+    </div>
+
+    <div class="container">
+        <div class="category">
+            <h2 class="category-title">💰 금융 계산기</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🏦</div>
+                    <h3>대출 계산기</h3>
+                    <p>월 상환액, 총 이자 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💵</div>
+                    <h3>적금 계산기</h3>
+                    <p>만기 금액, 이자 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💎</div>
+                    <h3>예금 계산기</h3>
+                    <p>예금 이자 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3>세금 계산기</h3>
+                    <p>소득세, 부가세 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💼</div>
+                    <h3>실수령액 계산기</h3>
+                    <p>4대보험 공제 후 월급</p>
+                </div>
+                <div class="card">
+                    <div class="icon">👴</div>
+                    <h3>연금 계산기</h3>
+                    <p>국민연금, 퇴직연금 계산</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-box">[ 애드센스 중간 광고 영역 ]</div>
+
+        <div class="category">
+            <h2 class="category-title">🏠 부동산 계산기</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🏡</div>
+                    <h3>취득세 계산기</h3>
+                    <p>주택 구입 시 취득세</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📈</div>
+                    <h3>양도소득세 계산기</h3>
+                    <p>부동산 매매 시 양도세</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🤝</div>
+                    <h3>중개수수료 계산기</h3>
+                    <p>부동산 중개 수수료</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔑</div>
+                    <h3>전세대출 계산기</h3>
+                    <p>전세자금 대출 상환액</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">📅 생활 계산기</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🎂</div>
+                    <h3>나이 계산기</h3>
+                    <p>만 나이, 세는 나이 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📆</div>
+                    <h3>디데이 계산기</h3>
+                    <p>D-Day, 기념일 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌙</div>
+                    <h3>음력 변환기</h3>
+                    <p>양력 ↔ 음력 변환</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🐉</div>
+                    <h3>띠 계산기</h3>
+                    <p>12띠, 60갑자 계산</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">💊 건강 계산기</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">⚖️</div>
+                    <h3>BMI 계산기</h3>
+                    <p>체질량 지수, 비만도</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🍎</div>
+                    <h3>칼로리 계산기</h3>
+                    <p>하루 권장 칼로리</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📏</div>
+                    <h3>체지방 계산기</h3>
+                    <p>체지방률 계산</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🤰</div>
+                    <h3>배란일 계산기</h3>
+                    <p>가임기, 배란일 계산</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">🔢 수학/공학 계산기</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🧮</div>
+                    <h3>기본 계산기</h3>
+                    <p>사칙연산, 퍼센트</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔬</div>
+                    <h3>공학용 계산기</h3>
+                    <p>삼각함수, 로그, 지수</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📐</div>
+                    <h3>단위 변환기</h3>
+                    <p>길이, 무게, 부피 변환</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📏</div>
+                    <h3>평수 계산기</h3>
+                    <p>평 ↔ m² 변환</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-box">[ 애드센스 하단 광고 영역 ]</div>
+    </div>
+
+    <script>
+        // 카드 클릭 시 알림
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                alert('📱 ' + title + ' 페이지로 이동합니다!\n\n(실제 사이트에서는 계산기 기능이 동작합니다)');
+            });
+        });
+    </script>
+</body>
+</html>
