@@ -1,0 +1,31 @@
+# 생성된 대본 파일들
+output/*.txt
+output/*.json
+output/*.md
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 가상환경
+venv/
+env/
+ENV/
+
+# IDE 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 파일
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.bak
+*.log
